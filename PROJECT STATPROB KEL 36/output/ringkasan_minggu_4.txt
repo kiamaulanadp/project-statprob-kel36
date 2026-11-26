@@ -1,0 +1,47 @@
+STATPROB KELOMPOK 36 - PROGRES 4
+========================================================================
+
+SUMBER DATA
+File: hasil_analisis_minggu_1.xlsx
+Sheet: Data_Analisis
+Jumlah observasi digunakan: 350
+
+PERSAMAAN REGRESI
+Ŷ = 358.844160 + (24.648705 × X1) + (-10.504944 × X2) + (0.364919 × X3)
+
+EVALUASI MODEL
+         Indikator         Nilai
+  Jumlah observasi  3.500000e+02
+         R-squared  8.790770e-01
+Adjusted R-squared  8.780285e-01
+       F-statistic  8.384416e+02
+     P-value Uji-F 2.622097e-158
+
+HASIL UJI-t
+                         Koefisien   Std_Error  t_statistic       P_Value  CI_95_Bawah  CI_95_Atas
+Variabel                                                                                          
+const                   358.844160  261.592643     1.371767  1.710248e-01  -155.667734  873.356053
+Jumlah_Pengunjung        24.648705    2.319921    10.624802  5.224441e-23    20.085782   29.211629
+Suhu_Rata2              -10.504944    8.213035    -1.279057  2.017340e-01   -26.658701    5.648814
+Biaya_Operasional_Ribu    0.364919    0.266869     1.367407  1.723853e-01    -0.159971    0.889810
+
+DIAGNOSTIK RESIDUAL
+    Pengujian  Statistik      P_Value                                                           Kesimpulan
+ Shapiro-Wilk   0.785848 4.061472e-21                Terdapat indikasi residual tidak berdistribusi normal
+Breusch-Pagan   2.958009 3.981448e-01 Tidak terdapat bukti yang cukup untuk menyatakan heteroskedastisitas
+
+MULTIKOLINEARITAS (VIF)
+              Variabel       VIF
+     Jumlah_Pengunjung 17.624538
+            Suhu_Rata2  1.004244
+Biaya_Operasional_Ribu 17.607080
+
+REKOMENDASI KEPUTUSAN
+1. Memprioritaskan evaluasi dan penguatan promosi serta pelayanan untuk meningkatkan jumlah pengunjung. Dalam model, jumlah pengunjung memiliki koefisien positif dan signifikan terhadap omzet, dengan prediktor lain dianggap tetap.
+
+2. Tidak menjadikan suhu sebagai dasar utama penetapan target omzet karena pengaruh parsialnya belum signifikan secara statistik.
+
+3. Memperkuat pencatatan biaya berdasarkan pos pengeluaran dan mengevaluasi efisiensinya. Pengaruh parsial total biaya operasional belum signifikan pada taraf 5%.
+
+4. Menafsirkan koefisien parsial dengan hati-hati dan mengevaluasi keterkaitan antar-prediktor. Nilai VIF di atas 10 menunjukkan indikasi multikolinearitas kuat; pertimbangkan pengumpulan data tambahan atau peninjauan spesifikasi model.
+
